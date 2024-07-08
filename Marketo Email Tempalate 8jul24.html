@@ -23,18 +23,34 @@
         p {
             font-family: Arial, sans-serif;
         }
+
+        .simple-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: blue;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+
+        }
+
+        .simple-button:hover {
+            background-color: darkblue;
+        }
     </style>
 </head>
 
 <body>
 
-    <table role="presentation"
+    <t able role="presentation"
         style="width:100%;border-collapse:collapse;border:0px;border-spacing:0;background: silver;">
         <tr>
-            <td style="text-align:left;">
-                <div style="width: 602px; margin: 50px auto; padding: 50px auto; background: white;">
+            <td style="text-align:center;">
+                <div style="max-width: 600px; margin: 20px auto; padding: 20px auto; background: white;">
                     <table role="presentation"
-                        style="width:602px; padding: 10px; border-collapse:collapse; border-bottom:0px solid black; border-spacing:0; text-align:left; margin:0 auto; background:white;">
+                        style="max-width: 600px; padding: 10px; border-collapse:collapse; border-bottom:0px solid black; border-spacing:0; text-align:left; margin:0 auto; background:white;">
                         <tr>
                             <td style="padding:40px 20px 30px 20px; text-align: center;border-bottom: 1px solid black;">
                                 <img src="https://sajidnoor.com/wp-content/uploads/2024/07/email.jpg" alt=""
@@ -44,13 +60,14 @@
                             </td>
 
                         </tr>
-                        <tr>
-                            <td style="padding: 0px 20px;border-bottom: 1px solid black;">
-                                <h1
-                                    style="font-size: 
-                                50px;text-align: center; font-family: Arial, Helvetica, sans-serif;border-bottom: 1px solid black;padding: 0px 0px 30px 0px ;">
+                        <tr>"
+                            <td style="padding: 0px 20px 50px 20px;border-bottom: 1px solid black;text-align: center;">
+                                <h1 style="font-size: 
+                                50px;text-align: center; font-family: Arial, Helvetica, sans-serif;border-bottom: 1px solid black;padding: 0px 0px 30px 0px ;"
+                                    class="mktoText" id="greeting" mktoName="Greeting Text">
                                     H E L L O </h1>
-                                <p> Dear Sir/Madam,
+                                <p style="text-align: left;" class="mktoText" id="mainPara"
+                                    mktoName="Email Body Paragraph"> Dear Sir/Madam,
                                     Thank you for State Farm. You recently had an initial phone
                                     discussion about your claim with our associate, Debra Y, and we would like
                                     to hear about your experience. Your feedback is important to us and it will
@@ -65,14 +82,16 @@
                                     thank you in advance for taking the time to provide feedback.
                                     And again, thank you for being a our customer,</p>
 
-                                <h3>Overall, how satisfied were you with your initial claim
+                                <h3 style="text-align: left;">Overall, how satisfied were you with your initial claim
                                     discussion?</h3>
 
-                                <p>Best regards,
+                                <p style="text-align: left;">Best regards,
                                     <br>State Farm Customer Experience Research Team
                                 </p>
-                                <h2 style="text-align: center;padding: 20px;">Got any Questions?</h2>
-                                <h3 style="text-align: center;padding: 20px;">Check out our FAQ's online</h3>
+                                <h2 style="text-align: center;padding: 20px 0px 0px 0px;">Got any Questions?</h2>
+                                <h4 style="text-align: center;padding: 0px;">Check out our FAQ's online</h4>
+                                <button class="simple-button">Click
+                                    Me</button>
                             </td>
 
                         </tr>
@@ -83,7 +102,7 @@
         </tr>
 
 
-    </table>
+        </table>
 </body>
 
 </html>
