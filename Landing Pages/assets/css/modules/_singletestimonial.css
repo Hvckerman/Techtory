@@ -1,58 +1,79 @@
-/* @import url('http://example.com/example_style.css'); */
-
-/***********************************************/
-/* CSS @imports must be at the top of the file */
-/* Add them above this section                 */
-/***********************************************/
-body {
+.singletestimonial {
     font-family: Arial, sans-serif;
     background-color: #fff;
     color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
+    border: 1px solid black;
 }
 
-.container {
-    width: 100%;
+.singleboxcontainer {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    padding: 20px;
 }
 
 .heading {
-
     font-weight: 700;
     font-size: 30px;
     color: #2e7d32;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 0px 0px;
 }
 
 .singlereviewbox {
     display: flex;
+    justify-content: space-between;
+}
+
+.singlereviewbox>* {
+    flex: 1;
+    display: flex;
     justify-content: center;
-    /* Center the flex items horizontally */
     align-items: center;
-    /* Center the flex items vertically */
-    margin-top: 20px;
-    /* Add space above the reviews */
+    text-align: center;
+}
+
+.review-wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.author-review {
+    width: 70%;
 }
 
 .singlereview {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 8px;
-    padding: 30px;
+    padding: 30px 60px;
     width: 30%;
+    margin: 10px;
+    text-align: center;
 }
 
 .singlereview img {
     border-radius: 50%;
     width: 150px;
-    /* Set equal width and height */
+
     height: 150px;
-    /* Set equal width and height */
+
     object-fit: cover;
-    /* Ensures the image covers the container without stretching */
+
+}
+
+.singlereview h3,
+.singlereview h5 {
+    margin: 5px 0;
 }
 
 .authname {
@@ -69,23 +90,3 @@ body {
     font-size: 0.9em;
     line-height: 1.5;
 }
-
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    .singlereview {
-        width: 45%;
-        /* Adjust width for medium screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .singlereview {
-        width: 100%;
-        /* Full width on small screens */
-    }
-}
-
-/*****************************************/
-/* Start your style declarations here    */
-/*****************************************/
