@@ -14,7 +14,7 @@
 
 <body>
     <div class="container">
-        <div class="headline">Headline 02 - Lorem ipsum dolor sit amet consectetur</div>
+        <div class="headline">{% inline_text field="heading" value="{{ module.heading }}" %}</div>
         <div class="testimonials">
             <div class="testimonial">
                 {% if module.author_review_box.user_image.src %}
