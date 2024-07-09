@@ -30,7 +30,12 @@ body {
 
 .singlereviewbox {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    /* Center the flex items horizontally */
+    align-items: center;
+    /* Center the flex items vertically */
+    margin-top: 20px;
+    /* Add space above the reviews */
 }
 
 .singlereview {
