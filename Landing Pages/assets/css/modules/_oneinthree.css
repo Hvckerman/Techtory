@@ -1,0 +1,48 @@
+.testimonial-container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    /* Use padding instead of margin-top for better centering */
+}
+
+.testimonial-heading {
+    font-weight: 700;
+    font-size: 30px;
+    color: #2e7d32;
+    margin-top: 30px;
+    padding: 0px 0px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+}
+
+.testimonial-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+.testimonial-item img {
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.testimonial-item h3 {
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
