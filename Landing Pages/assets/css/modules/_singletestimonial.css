@@ -6,7 +6,7 @@
 /***********************************************/
 body {
     font-family: Arial, sans-serif;
-    background-color: #e8f5e9;
+    background-color: #fff;
     color: #333;
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@ body {
     text-align: center;
 }
 
-.headline {
+.heading {
 
     font-weight: 700;
     font-size: 30px;
@@ -28,19 +28,19 @@ body {
     margin-bottom: 20px;
 }
 
-.testimonials {
+.singlereviewbox {
     display: flex;
     justify-content: space-around;
 }
 
-.testimonial {
+.singlereview {
 
     border-radius: 8px;
     padding: 30px;
     width: 30%;
 }
 
-.testimonial img {
+.singlereview img {
     border-radius: 50%;
     width: 150px;
     /* Set equal width and height */
@@ -50,17 +50,17 @@ body {
     /* Ensures the image covers the container without stretching */
 }
 
-.name {
+.authname {
     font-weight: bold;
     margin: 10px 0;
 }
 
-.title {
+.authtitle {
     color: #555;
     margin-bottom: 10px;
 }
 
-.text {
+.authtext {
     font-size: 0.9em;
     line-height: 1.5;
 }
@@ -68,14 +68,14 @@ body {
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
-    .testimonial {
+    .singlereview {
         width: 45%;
         /* Adjust width for medium screens */
     }
 }
 
 @media (max-width: 480px) {
-    .testimonial {
+    .singlereview {
         width: 100%;
         /* Full width on small screens */
     }
