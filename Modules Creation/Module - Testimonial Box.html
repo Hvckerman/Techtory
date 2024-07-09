@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials</title>
+    {{ require_css(get_asset_url('Landing Pages/assets/css/main.css')) }}
+
+    {% if template_css %}
+    {{ require_css(get_asset_url(template_css)) }}
+    {% endif %}
+</head>
+
+<body>
+    <div class="container">
+        <div class="headline">Headline 02 - Lorem ipsum dolor sit amet consectetur</div>
+        <div class="testimonials">
+            <div class="testimonial">
+                {% if module.author_review_box.user_image.src %}
+                {% set sizeAttrs = 'width="{{ module.author_review_box.user_image.width|escape_attr }}" height="{{
+                module.author_review_box.user_image.height|escape_attr }}"' %}
+                {% if module.author_review_box.user_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.author_review_box.user_image.width|escape_attr }}" height="{{
+                module.author_review_box.user_image.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.author_review_box.user_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.author_review_box.user_image.max_width|escape_attr }}" height="{{
+                module.author_review_box.user_image.max_height|escape_attr }}" style="max-width: 100%; height: auto;"'
+                %}
+                {% endif %}
+                {% set loadingAttr = module.author_review_box.user_image.loading != 'disabled' ? 'loading="{{
+                module.author_review_box.user_image.loading|escape_attr }}"' : '' %}
+                <img src="{{ module.author_review_box.user_image.src|escape_url }}"
+                    alt="{{ module.author_review_box.user_image.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+                {% inline_text field="author_review_box.author_name" value="{{ module.author_review_box.author_name }}"
+                %}
+                {% inline_text field="author_review_box.author_review" value="{{ module.author_review_box.author_review
+                }}" %}
+            </div>
+            <div class="testimonial">
+                {% if module.author_review_box_2.user_image.src %}
+                {% set sizeAttrs = 'width="{{ module.author_review_box_2.user_image.width|escape_attr }}" height="{{
+                module.author_review_box_2.user_image.height|escape_attr }}"' %}
+                {% if module.author_review_box_2.user_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.author_review_box_2.user_image.width|escape_attr }}" height="{{
+                module.author_review_box_2.user_image.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.author_review_box_2.user_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.author_review_box_2.user_image.max_width|escape_attr }}" height="{{
+                module.author_review_box_2.user_image.max_height|escape_attr }}" style="max-width: 100%; height: auto;"'
+                %}
+                {% endif %}
+                {% set loadingAttr = module.author_review_box_2.user_image.loading != 'disabled' ? 'loading="{{
+                module.author_review_box_2.user_image.loading|escape_attr }}"' : '' %}
+                <img src="{{ module.author_review_box_2.user_image.src|escape_url }}"
+                    alt="{{ module.author_review_box_2.user_image.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+                {% inline_text field="author_review_box_2.author_name" value="{{ module.author_review_box_2.author_name
+                }}" %}
+                {% inline_text field="author_review_box_2.author_review" value="{{
+                module.author_review_box_2.author_review }}" %}
+            </div>
+            <div class="testimonial">
+                {% if module.author_review_box_3.user_image.src %}
+                {% set sizeAttrs = 'width="{{ module.author_review_box_3.user_image.width|escape_attr }}" height="{{
+                module.author_review_box_3.user_image.height|escape_attr }}"' %}
+                {% if module.author_review_box_3.user_image.size_type == 'auto' %}
+                {% set sizeAttrs = 'width="{{ module.author_review_box_3.user_image.width|escape_attr }}" height="{{
+                module.author_review_box_3.user_image.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+                {% elif module.author_review_box_3.user_image.size_type == 'auto_custom_max' %}
+                {% set sizeAttrs = 'width="{{ module.author_review_box_3.user_image.max_width|escape_attr }}" height="{{
+                module.author_review_box_3.user_image.max_height|escape_attr }}" style="max-width: 100%; height: auto;"'
+                %}
+                {% endif %}
+                {% set loadingAttr = module.author_review_box_3.user_image.loading != 'disabled' ? 'loading="{{
+                module.author_review_box_3.user_image.loading|escape_attr }}"' : '' %}
+                <img src="{{ module.author_review_box_3.user_image.src|escape_url }}"
+                    alt="{{ module.author_review_box_3.user_image.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+                {% endif %}
+                {% inline_text field="author_review_box_3.author_name" value="{{ module.author_review_box_3.author_name
+                }}" %}
+                {% inline_text field="author_review_box_3.author_review" value="{{
+                module.author_review_box_3.author_review }}" %}
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
