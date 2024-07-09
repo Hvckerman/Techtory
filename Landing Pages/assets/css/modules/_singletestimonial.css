@@ -1,3 +1,4 @@
+/* Desktop styles */
 .singletestimonial {
     font-family: Arial, sans-serif;
     background-color: #fff;
@@ -7,6 +8,8 @@
     align-items: center;
     margin: 0;
     border: 1px solid black;
+    padding: 20px;
+    /* Add padding to create space */
 }
 
 .singleboxcontainer {
@@ -17,6 +20,7 @@
     align-items: center;
     text-align: center;
     padding: 20px;
+    /* Add padding for spacing */
 }
 
 .heading {
@@ -24,7 +28,8 @@
     font-size: 30px;
     color: #2e7d32;
     margin-top: 30px;
-    padding: 0px 0px;
+    padding: 0 200px;
+    /* Adjust padding for larger screens */
 }
 
 .singlereviewbox {
@@ -64,11 +69,10 @@
 .singlereview img {
     border-radius: 50%;
     width: 150px;
-
     height: 150px;
-
     object-fit: cover;
-
+    margin-bottom: 10px;
+    /* Add margin bottom for spacing */
 }
 
 .singlereview h3,
@@ -89,4 +93,57 @@
 .authtext {
     font-size: 0.9em;
     line-height: 1.5;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .singletestimonial {
+        padding: 10px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .singleboxcontainer {
+        padding: 10px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .heading {
+        font-size: 24px;
+        /* Adjust font size for smaller screens */
+        padding: 0 20px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .singlereviewbox {
+        flex-direction: column;
+        /* Stack reviews vertically on smaller screens */
+        align-items: center;
+        /* Center reviews horizontally */
+    }
+
+    .singlereview {
+        width: 80%;
+        /* Take up most of the width on smaller screens */
+        margin: 10px 0;
+        /* Adjust margin for spacing */
+        padding: 20px;
+        /* Adjust padding for spacing */
+    }
+
+    .singlereview img {
+        width: 120px;
+        /* Adjust image size for smaller screens */
+        height: 120px;
+        /* Adjust image size for smaller screens */
+    }
+
+    .authname {
+        order: 1;
+        /* Move author name above author review text on mobile */
+    }
+
+    .authtext {
+        order: 2;
+        /* Move author review text below author name on mobile */
+    }
 }
