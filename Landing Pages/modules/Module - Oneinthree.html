@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonials</title>
+    <title>OneinThree</title>
+    <link rel="stylesheet" href="styles.css">
     {{ require_css(get_asset_url('Landing Pages/assets/css/main.css')) }}
 
     {% if template_css %}
@@ -32,6 +33,7 @@
                 <img src="{{ module.post_group.post_image.src|escape_url }}"
                     alt="{{ module.post_group.post_image.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
                 {% endif %}
+                <div class="circle">1 in 3</div>
                 <h5>{% inline_text field="post_group.heading" value="{{ module.post_group.heading }}" %}</h5>
             </div>
             <div class="testimonial-item">
@@ -50,6 +52,7 @@
                 <img src="{{ module.post_group_2.post_image.src|escape_url }}"
                     alt="{{ module.post_group_2.post_image.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
                 {% endif %}
+                <div class="circle">1 in 3</div>
                 <h5>{% inline_text field="post_group_2.heading" value="{{ module.post_group_2.heading }}" %}</h5>
             </div>
             <div class="testimonial-item">
@@ -68,6 +71,7 @@
                 <img src="{{ module.post_group_3.post_image.src|escape_url }}"
                     alt="{{ module.post_group_3.post_image.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
                 {% endif %}
+                <div class="circle">1 in 3</div>
                 <h5>{% inline_text field="post_group_3.heading" value="{{ module.post_group_3.heading }}" %}</h5>
             </div>
         </div>

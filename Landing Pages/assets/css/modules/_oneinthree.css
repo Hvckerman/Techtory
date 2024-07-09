@@ -1,11 +1,10 @@
 .testimonial-container {
-    background-color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 50px 80px;
     /* Use padding instead of margin-top for better centering */
 }
 
@@ -20,7 +19,7 @@
 .testimonial-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 10px;
     width: 100%;
     padding: 20px;
 }
@@ -32,17 +31,42 @@
     background-color: #fff;
     padding: 5px;
     text-align: center;
+    position: relative;
+    /* Add relative positioning to parent */
 }
 
 .testimonial-item img {
     border-radius: 10px;
-    width: 200px;
-    height: 100px;
+    width: 400px;
+    height: 200px;
     object-fit: cover;
     margin-bottom: 10px;
 }
 
-.testimonial-item h3 {
+.circle {
+    position: absolute;
+    top: 64%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background-color: #3ca3b0;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
     font-weight: bold;
-    margin: 10px 0 0 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Arial', sans-serif;
+
+}
+
+.testimonial-item h5 {
+    font-weight: bold;
+    margin: 20px 0 0 0;
 }
