@@ -58,12 +58,13 @@
                 <img src="{{ module.author_review_box_2.user_image.src|escape_url }}"
                     alt="{{ module.author_review_box_2.user_image.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
                 {% endif %}
-                {% inline_text field="author_review_box_2.author_name" value="{{ module.author_review_box_2.author_name
-                }}" %}
-                <h3>{% inline_text field="author_review_box_2.author_profession" value="{{
-                    module.author_review_box_2.author_profession }}" %}</h3>
-                <h5> {% inline_text field="author_review_box_2.author_review" value="{{
-                    module.author_review_box_2.author_review }}" %}</h5>
+                <h3>{% inline_text field="author_review_box_2.author_name" value="{{
+                    module.author_review_box_2.author_name
+                    }}" %}</h3>
+                <h5> {% inline_text field="author_review_box_2.author_profession" value="{{
+                    module.author_review_box_2.author_profession }}" %}</h5>
+                {% inline_text field="author_review_box_2.author_review" value="{{
+                module.author_review_box_2.author_review }}" %}
             </div>
             <div class="testimonial">
                 {% if module.author_review_box_3.user_image.src %}
@@ -82,12 +83,13 @@
                 <img src="{{ module.author_review_box_3.user_image.src|escape_url }}"
                     alt="{{ module.author_review_box_3.user_image.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
                 {% endif %}
-                {% inline_text field="author_review_box_3.author_name" value="{{ module.author_review_box_3.author_name
-                }}" %}
-                <h3></h3>{% inline_text field="author_review_box_3.author_profession" value="{{
-                module.author_review_box_3.author_profession }}" %}</h3>
-                <h5> {% inline_text field="author_review_box_3.author_review" value="{{
-                    module.author_review_box_3.author_review }}" %}</h5>
+                <h3> {% inline_text field="author_review_box_3.author_name" value="{{
+                    module.author_review_box_3.author_name
+                    }}" %}</h3>
+                <h5> {% inline_text field="author_review_box_3.author_profession" value="{{
+                    module.author_review_box_3.author_profession }}" %}</h5>
+                {% inline_text field="author_review_box_3.author_review" value="{{
+                module.author_review_box_3.author_review }}" %}
             </div>
         </div>
     </div>

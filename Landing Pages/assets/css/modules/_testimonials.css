@@ -1,0 +1,58 @@
+/* @import url('http://example.com/example_style.css'); */
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f5e9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 100%;
+            text-align: center;
+        }
+      .headline {
+   
+    font-weight: 700;
+    font-size: 30px;
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+        .testimonials {
+            display: flex;
+            justify-content: space-around;
+        }
+        .testimonial {
+
+            border-radius: 8px;
+            padding: 30px;
+            width: 30%;
+        }
+       .testimonial img {
+    border-radius: 50%;
+    width: 150px; /* Set equal width and height */
+    height: 150px; /* Set equal width and height */
+    object-fit: cover; /* Ensures the image covers the container without stretching */
+}
+        .name {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .title {
+            color: #555;
+            margin-bottom: 10px;
+        }
+        .text {
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
