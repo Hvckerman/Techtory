@@ -1,4 +1,4 @@
-.testimonial-container {
+.oneinthree-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,7 +8,7 @@
     /* Use padding instead of margin-top for better centering */
 }
 
-.testimonial-heading {
+.oneinthree-heading {
     font-weight: 700;
     font-size: 30px;
     color: #2e7d32;
@@ -16,7 +16,7 @@
     padding: 0px 0px;
 }
 
-.testimonial-grid {
+.oneinthree-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -24,18 +24,17 @@
     padding: 20px;
 }
 
-.testimonial-item {
+.oneinthree-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #fff;
     padding: 5px;
     text-align: center;
     position: relative;
     /* Add relative positioning to parent */
 }
 
-.testimonial-item img {
+.oneinthree-item img {
     border-radius: 10px;
     width: 400px;
     height: 200px;
@@ -65,7 +64,7 @@
     font-family: 'Arial', sans-serif;
 }
 
-.testimonial-item h5 {
+.oneinthree-item h5 {
     font-weight: bold;
     margin: 20px 0 0 0;
 }
@@ -73,18 +72,18 @@
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
 
-    .testimonial-container {
+    .oneinthree-container {
         padding: 50px 20px;
     }
 
-    .testimonial-grid {
+    .oneinthree-grid {
         grid-template-columns: 1fr;
         /* Stack items vertically */
         gap: 20px;
         /* Adjust gap for vertical stacking */
     }
 
-    .testimonial-item img {
+    .oneinthree-item img {
         border-radius: 10px;
         width: 400px;
         height: 200px;
@@ -92,12 +91,12 @@
         margin-bottom: 10px;
     }
 
-    .testimonial-item {
+    .oneinthree-item {
         padding: 20px;
         /* Adjust padding for smaller screens */
     }
 
-    .testimonial-item h5 {
+    .oneinthree-item h5 {
         font-weight: bold;
         margin: 40px 0 0 0;
     }
