@@ -1,43 +1,49 @@
-/* @import url('http://example.com/example_style.css'); */
-
-/***********************************************/
-/* CSS @imports must be at the top of the file */
-/* Add them above this section                 */
-/***********************************************/
+/* CSS for Testimonials Section */
 body {
     font-family: Arial, sans-serif;
-    background-color: #e8f5e9;
     color: #333;
+
+}
+
+.testimonial-container {
+    padding: 50px 20px;
+    background-color: #f1fee0;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     margin: 0;
+
 }
 
-.container {
-    width: 100%;
-    text-align: center;
-}
-
-.headline {
-
+.testimonial-headline {
     font-weight: 700;
     font-size: 30px;
     color: #2e7d32;
+    padding: 0px 60px;
     margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .testimonials {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .testimonial {
-
     border-radius: 8px;
     padding: 30px;
-    width: 30%;
+    width: 100%;
+    /* Adjust width for larger screens */
+    margin-bottom: 20px;
+    /* Add some spacing between testimonials */
+    text-align: center;
+    /* Center align content */
+    box-sizing: border-box;
 }
 
 .testimonial img {
@@ -48,6 +54,8 @@ body {
     /* Set equal width and height */
     object-fit: cover;
     /* Ensures the image covers the container without stretching */
+    margin-bottom: 20px;
+    /* Space below the image */
 }
 
 .name {
@@ -65,7 +73,6 @@ body {
     line-height: 1.5;
 }
 
-
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     .testimonial {
@@ -75,12 +82,34 @@ body {
 }
 
 @media (max-width: 480px) {
+    .testimonials {
+        grid-template-columns: 1fr;
+        /* Change to single column layout */
+        width: 100%;
+    }
+
     .testimonial {
         width: 100%;
         /* Full width on small screens */
     }
-}
 
-/*****************************************/
-/* Start your style declarations here    */
-/*****************************************/
+    .testimonial-headline {
+        font-weight: 700;
+        font-size: 24px;
+        color: #2e7d32;
+        padding: 0px 20px;
+        margin-bottom: 20px;
+    }
+
+    .testimonial img {
+        border-radius: 50%;
+        width: 100px;
+        /* Set equal width and height */
+        height: 100px;
+        /* Set equal width and height */
+        object-fit: cover;
+        /* Ensures the image covers the container without stretching */
+        margin-bottom: 20px;
+        /* Space below the image */
+    }
+}

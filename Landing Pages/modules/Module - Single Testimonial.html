@@ -1,23 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
+{{ require_css(get_asset_url('Landing Pages/assets/css/main.css')) }}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonials</title>
-    {{ require_css(get_asset_url('Landing Pages/assets/css/main.css')) }}
+{% if template_css %}
+{{ require_css(get_asset_url(template_css)) }}
+{% endif %}
 
-    {% if template_css %}
-    {{ require_css(get_asset_url(template_css)) }}
-    {% endif %}
-</head>
 
 <body>
-    <div class="singleboxcontainer">
-        <div class="heading">{% inline_text field="heading" value="{{ module.heading }}" %}</div>
-        <div class="singlereviewbox">
-            <div class="review-wrapper">
-                <div class="singlereview">
+    <div class="single-boxcontainer">
+        <div class="single-heading">{% inline_text field="heading" value="{{ module.heading }}" %}</div>
+        <div class="single-reviewbox">
+            <div class="single-review-wrapper">
+                <div class="single-review">
                     {% if module.author_box.author_image.src %}
                     {% set sizeAttrs = 'width="{{ module.author_box.author_image.width|escape_attr }}" height="{{
                     module.author_box.author_image.height|escape_attr }}"' %}
@@ -45,5 +38,3 @@
         </div>
     </div>
 </body>
-
-</html>

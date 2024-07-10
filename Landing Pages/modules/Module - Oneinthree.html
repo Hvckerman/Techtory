@@ -1,22 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+{{ require_css(get_asset_url('Landing Pages/assets/css/main.css')) }}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonials</title>
-    {{ require_css(get_asset_url('Landing Pages/assets/css/main.css')) }}
+{% if template_css %}
+{{ require_css(get_asset_url(template_css)) }}
+{% endif %}
 
-    {% if template_css %}
-    {{ require_css(get_asset_url(template_css)) }}
-    {% endif %}
-</head>
 
 <body>
-    <div class="testimonial-container">
-        <div class="testimonial-heading">{% inline_text field="headline" value="{{ module.headline }}" %}</div>
-        <div class="testimonial-grid">
-            <div class="testimonial-item">
+    <div class="oneinthree-container">
+        <div class="oneinthree-heading">{% inline_text field="headline" value="{{ module.headline }}" %}</div>
+        <div class="oneinthree-grid">
+            <div class="oneinthree-item">
                 {% if module.post_group.post_image.src %}
                 {% set sizeAttrs = 'width="{{ module.post_group.post_image.width|escape_attr }}" height="{{
                 module.post_group.post_image.height|escape_attr }}"' %}
@@ -32,9 +25,10 @@
                 <img src="{{ module.post_group.post_image.src|escape_url }}"
                     alt="{{ module.post_group.post_image.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
                 {% endif %}
+                <div class="circle">1 in 3</div>
                 <h5>{% inline_text field="post_group.heading" value="{{ module.post_group.heading }}" %}</h5>
             </div>
-            <div class="testimonial-item">
+            <div class="oneinthree-item">
                 {% if module.post_group_2.post_image.src %}
                 {% set sizeAttrs = 'width="{{ module.post_group_2.post_image.width|escape_attr }}" height="{{
                 module.post_group_2.post_image.height|escape_attr }}"' %}
@@ -50,9 +44,10 @@
                 <img src="{{ module.post_group_2.post_image.src|escape_url }}"
                     alt="{{ module.post_group_2.post_image.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
                 {% endif %}
+                <div class="circle">1 in 3</div>
                 <h5>{% inline_text field="post_group_2.heading" value="{{ module.post_group_2.heading }}" %}</h5>
             </div>
-            <div class="testimonial-item">
+            <div class="oneinthree-item">
                 {% if module.post_group_3.post_image.src %}
                 {% set sizeAttrs = 'width="{{ module.post_group_3.post_image.width|escape_attr }}" height="{{
                 module.post_group_3.post_image.height|escape_attr }}"' %}
@@ -68,10 +63,9 @@
                 <img src="{{ module.post_group_3.post_image.src|escape_url }}"
                     alt="{{ module.post_group_3.post_image.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
                 {% endif %}
+                <div class="circle">1 in 3</div>
                 <h5>{% inline_text field="post_group_3.heading" value="{{ module.post_group_3.heading }}" %}</h5>
             </div>
         </div>
     </div>
 </body>
-
-</html>

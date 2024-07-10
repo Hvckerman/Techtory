@@ -1,20 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+{{ require_css(get_asset_url('Landing Pages/assets/css/main.css')) }}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonials</title>
-    {{ require_css(get_asset_url('Landing Pages/assets/css/main.css')) }}
-
-    {% if template_css %}
-    {{ require_css(get_asset_url(template_css)) }}
-    {% endif %}
-</head>
+{% if template_css %}
+{{ require_css(get_asset_url(template_css)) }}
+{% endif %}
 
 <body>
-    <div class="container">
-        <div class="headline">Headline 02 - Lorem ipsum dolor sit amet consectetur</div>
+
+
+    <div class="testimonial-container">
+        <div class="testimonial-headline">{% inline_text field="heading" value="{{ module.heading }}" %}</div>
         <div class="testimonials">
             <div class="testimonial">
                 {% if module.author_review_box.user_image.src %}
@@ -94,5 +88,3 @@
         </div>
     </div>
 </body>
-
-</html>
