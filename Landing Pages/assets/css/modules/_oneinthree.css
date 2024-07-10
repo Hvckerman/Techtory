@@ -63,10 +63,43 @@
     font-size: 16px;
     font-weight: 300;
     font-family: 'Arial', sans-serif;
-
 }
 
 .testimonial-item h5 {
     font-weight: bold;
     margin: 20px 0 0 0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+
+    .testimonial-container {
+        padding: 50px 20px;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+        /* Stack items vertically */
+        gap: 20px;
+        /* Adjust gap for vertical stacking */
+    }
+
+    .testimonial-item img {
+        border-radius: 10px;
+        width: 400px;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    .testimonial-item {
+        padding: 20px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .testimonial-item h5 {
+        font-weight: bold;
+        margin: 40px 0 0 0;
+    }
+
 }

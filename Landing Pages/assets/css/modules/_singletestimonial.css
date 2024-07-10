@@ -37,32 +37,22 @@
     justify-content: space-between;
 }
 
-.singlereviewbox>* {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
 .review-wrapper {
     display: flex;
     width: 100%;
-}
-
-.author-review {
-    width: 70%;
-}
-
-.singlereview {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    border-radius: 8px;
-    padding: 30px 60px;
-    width: 30%;
-    margin: 10px;
+    /* Center vertically */
+    padding: 0 50px;
+    /* Add left and right padding */
+}
+
+.singlereview,
+.author-review {
+    flex: 1;
+    /* Ensure equal spacing */
+    padding: 20px;
+    /* Adjust padding for spacing */
     text-align: center;
 }
 
@@ -78,6 +68,7 @@
 .singlereview h3,
 .singlereview h5 {
     margin: 5px 0;
+    padding: 0px 20px;
 }
 
 .authname {
@@ -121,29 +112,17 @@
         /* Center reviews horizontally */
     }
 
-    .singlereview {
-        width: 80%;
-        /* Take up most of the width on smaller screens */
-        margin: 10px 0;
-        /* Adjust margin for spacing */
-        padding: 20px;
-        /* Adjust padding for spacing */
+    .review-wrapper {
+        flex-direction: column;
+        /* Stack items vertically on mobile */
+        align-items: center;
     }
 
-    .singlereview img {
-        width: 120px;
-        /* Adjust image size for smaller screens */
-        height: 120px;
-        /* Adjust image size for smaller screens */
-    }
-
-    .authname {
-        order: 1;
-        /* Move author name above author review text on mobile */
-    }
-
-    .authtext {
-        order: 2;
-        /* Move author review text below author name on mobile */
+    .singlereview,
+    .author-review {
+        width: 100%;
+        /* Full width on smaller screens */
+        padding: 10px;
+        /* Adjust padding for smaller screens */
     }
 }
