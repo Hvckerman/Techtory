@@ -1,5 +1,5 @@
 /* Desktop styles */
-.singletestimonial {
+.single-testimonial {
     font-family: Arial, sans-serif;
     background-color: #fff;
     color: #333;
@@ -12,7 +12,7 @@
     /* Add padding to create space */
 }
 
-.singleboxcontainer {
+.single-boxcontainer {
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@
     /* Add padding for spacing */
 }
 
-.heading {
+.single-heading {
     font-weight: 700;
     font-size: 30px;
     color: #2e7d32;
@@ -32,12 +32,12 @@
     /* Adjust padding for larger screens */
 }
 
-.singlereviewbox {
+.single-reviewbox {
     display: flex;
     justify-content: space-between;
 }
 
-.review-wrapper {
+.single-review-wrapper {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -47,7 +47,7 @@
     /* Add left and right padding */
 }
 
-.singlereview,
+.single-review,
 .author-review {
     flex: 1;
     /* Ensure equal spacing */
@@ -56,7 +56,7 @@
     text-align: center;
 }
 
-.singlereview img {
+.single-review img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -65,8 +65,8 @@
     /* Add margin bottom for spacing */
 }
 
-.singlereview h3,
-.singlereview h5 {
+.single-review h3,
+.single-review h5 {
     margin: 5px 0;
     padding: 0px 20px;
 }
@@ -88,37 +88,37 @@
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
-    .singletestimonial {
+    .single-testimonial {
         padding: 10px;
         /* Adjust padding for smaller screens */
     }
 
-    .singleboxcontainer {
+    .single-boxcontainer {
         padding: 10px;
         /* Adjust padding for smaller screens */
     }
 
-    .heading {
+    .single-heading {
         font-size: 24px;
         /* Adjust font size for smaller screens */
         padding: 0 20px;
         /* Adjust padding for smaller screens */
     }
 
-    .singlereviewbox {
+    .single-reviewbox {
         flex-direction: column;
         /* Stack reviews vertically on smaller screens */
         align-items: center;
         /* Center reviews horizontally */
     }
 
-    .review-wrapper {
+    .single-review-wrapper {
         flex-direction: column;
         /* Stack items vertically on mobile */
         align-items: center;
     }
 
-    .singlereview,
+    .single-review,
     .author-review {
         width: 100%;
         /* Full width on smaller screens */
